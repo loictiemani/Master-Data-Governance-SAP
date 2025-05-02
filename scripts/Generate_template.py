@@ -100,7 +100,7 @@ def generate_asset_data(num_equipment=50, seed=42):
     bom_df = pd.DataFrame(bom_rows, columns=[
         "Equipment ID", "Component ID", "Component Description", "Type", "Quantity"
     ])
-    func_loc_df = pd.DataFrame(floc_rows, columns=[
+    floc_df = pd.DataFrame(floc_rows, columns=[
         "Functional Location", "Area", "Subarea", "Class"
     ])
     task_list_df = pd.DataFrame(task_list_rows, columns=[
@@ -110,4 +110,4 @@ def generate_asset_data(num_equipment=50, seed=42):
         "Equipment ID", "Failure Mode ID", "Failure Mode", "Severity", "Recommended Action", "Criticality"
     ])
 
-    return equipment_df, bom_df, func_loc_df, task_list_df, fmeca_df
+    return equipment_df, bom_df, floc_df, task_list_df, fmeca_df
