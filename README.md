@@ -32,7 +32,7 @@ Plant
 │   ├── Subarea
 │   │   ├── System
 │   │   │   ├── Equipment
-│   │   │   │   └── Component
+│   │   │   │     └── Component
 
 ---
 ## 📬 Contact
