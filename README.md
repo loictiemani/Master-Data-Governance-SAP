@@ -27,13 +27,14 @@ SAP PM | SAP MDG | Power BI | SQL Server | AVEVA PI (simulated) | Azure (optiona
   
 ## Asset Hierarchy
 
-Plant
+<pre> Plant
 ├── Area
 │   ├── Subarea
 │   │   ├── System
 │   │   │   ├── Equipment
 │   │   │   │   └── Component
-<pre> Jansen Mine (Plant) 
+  <pre> 
+<pre> Plant 
   ├── Mill Area 
   │ ├── Crushing Subarea 
   │ │ ├── Crusher System 
