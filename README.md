@@ -33,6 +33,8 @@ Plant
 │   │   ├── System
 │   │   │   ├── Equipment
 │   │   │   │   └── Component
+<pre> Jansen Mine (Plant) ├── Mill Area │ ├── Crushing Subarea │ │ ├── Crusher System │ │ │ ├── Crusher A (Equipment) │ │ │ │ ├── Motor A (Component) │ │ │ │ ├── Gearbox A │ │ │ │ └── Bearing A1 │ ├── Conveying Subarea │ │ ├── Conveyor System │ │ │ ├── Conveyor 1 (Equipment) │ │ │ │ ├── Motor B │ │ │ │ ├── Pulley B1 │ │ │ │ └── Belt B1 ├── UG Mine Area │ ├── Hoisting Subarea │ │ ├── Hoist System │ │ │ ├── Hoist A (Equipment) │ │ │ │ ├── Motor H1 │ │ │ │ ├── Brake System H2 │ │ │ │ └── Drum H3 </pre>
+
 ---
 ## 📬 Contact
 Created by Loic, Regional Asset Management Process & Data Lead (ex-Glencore)  
