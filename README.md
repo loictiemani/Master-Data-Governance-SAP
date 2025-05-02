@@ -28,11 +28,11 @@ SAP PM | SAP MDG | Power BI | SQL Server | AVEVA PI (simulated) | Azure (optiona
 ## Asset Hierarchy
 
 - Plant
-- ├── Area
--    ├── Subarea
--    │   ├── System
--    │   │   ├── Equipment
--    │   │   │   └── Component
+-  ├── Area
+-     ├── Subarea
+-        ├── System
+-           ├── Equipment
+-              └── Component
 
 ---
 ## 📬 Contact
