@@ -26,5 +26,6 @@ SAP PM | SAP MDG | Power BI | SQL Server | AVEVA PI (simulated) | Azure (optiona
 - `docs/` → Documentation of governance process
 
 ---
-
+## 📬 Contact
+Created by Loic, Regional Asset Management Process & Data Lead (ex-Glencore)  
 
