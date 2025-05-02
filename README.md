@@ -27,7 +27,4 @@ SAP PM | SAP MDG | Power BI | SQL Server | AVEVA PI (simulated) | Azure (optiona
 
 ---
 
-## 📬 Contact
-Created by [Loic], Regional Asset Management Process & Data Lead (ex-Glencore)  
-Feel free to connect on [LinkedIn] or explore more at [your portfolio URL].
 
