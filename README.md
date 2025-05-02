@@ -1,6 +1,3 @@
-# Master-Data-Governance-SAP
-
-
 # Maintenance Readiness & Master Data Governance Project
 
 This end-to-end project simulates the master data preparation and governance process for a greenfield mining operation, aligning with the responsibilities described in BHP's Fixed Reliability role for the Jansen Potash project.
