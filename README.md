@@ -27,13 +27,12 @@ SAP PM | SAP MDG | Power BI | SQL Server | AVEVA PI (simulated) | Azure (optiona
   
 ## Asset Hierarchy
 
-- Plant
--  ├── Area
--     ├── Subarea
--        ├── System
--           ├── Equipment
--              └── Component
-
+Plant
+├── Area
+│   ├── Subarea
+│   │   ├── System
+│   │   │   ├── Equipment
+│   │   │   │   └── Component
 ---
 ## 📬 Contact
 Created by Loic, Regional Asset Management Process & Data Lead (ex-Glencore)  
