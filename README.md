@@ -29,10 +29,10 @@ SAP PM | SAP MDG | Power BI | SQL Server | AVEVA PI (simulated) | Azure (optiona
 
 - Plant
 - ├── Area
-- │   ├── Subarea
-- │   │   ├── System
-- │   │   │   ├── Equipment
-- │   │   │   │   └── Component
+-    ├── Subarea
+-    │   ├── System
+-    │   │   ├── Equipment
+-    │   │   │   └── Component
 
 ---
 ## 📬 Contact
