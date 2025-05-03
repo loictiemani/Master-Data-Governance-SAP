@@ -58,8 +58,9 @@ Plant
   │ │ │ │ ├── Brake System H2 
   │ │ │ │ └── Drum H3 
 </pre>
-
+  
 ## KPIs
+
 🛠️ Asset Performance KPIs
 KPI	Description
 MTTF (Mean Time to Failure)	Average uptime between failures
