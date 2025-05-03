@@ -57,6 +57,38 @@ Plant
   │ │ │ │ ├── Brake System H2 
   │ │ │ │ └── Drum H3 
 </pre>
+🛠️ Asset Performance KPIs
+KPI	Description
+MTTF (Mean Time to Failure)	Average uptime between failures
+MTTR (Mean Time to Repair)	Average time taken to restore equipment
+MTBF (Mean Time Between Failures)	Measures reliability over time
+OEE (Overall Equipment Effectiveness)	Composite measure: Availability × Performance × Quality
+Availability (%)	% of time equipment is available for use
+Utilization Rate	Equipment run hours vs. available hours
+
+🔍 Maintenance Efficiency KPIs
+KPI	Description
+Planned vs. Unplanned Maintenance (%)	% of work that was planned in advance
+Backlog Age	Average age of open work orders
+PM Compliance Rate (%)	% of preventive maintenance tasks completed on schedule
+Maintenance Cost per Equipment	Cost to maintain each asset annually
+Failure Rate per Equipment Class	Number of failures over time per asset type
+
+📊 Master Data Quality KPIs
+KPI	Description
+Data Completeness (%)	% of records with all required fields filled
+Duplicate Records Count	Number of duplicate equipment IDs or functional locations
+Hierarchy Accuracy	% of assets correctly mapped to plant/area/system/component
+BOM Coverage (%)	% of assets with complete bill of materials
+Task List Coverage (%)	% of equipment with assigned maintenance task lists
+
+📦 Readiness & Progress KPIs
+KPI	Description
+Master Data Upload Progress	% of total assets uploaded into 1SAP/APM
+Validation Error Rate (%)	% of records with validation errors during upload
+FMECAs Completed (%)	% of assets with completed FMECA analysis
+Template Submission Compliance	% of teams/sites submitting data templates on time
+Maintenance Strategy Optimization Progress	% of strategies reviewed and approved pre-go-live
 
 ---
 ## 📬 Contact
