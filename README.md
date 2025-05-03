@@ -18,8 +18,10 @@ This end-to-end project simulates the master data preparation and governance pro
 SAP PM | SAP MDG | Power BI | SQL Server | AVEVA PI (simulated) | Azure (optional)
 
 ## 🖼️ Screenshots
-*(Include images of Power BI dashboards, asset hierarchy charts, etc.)*
+##### Master Data Completeness/ Asset Hierarchy
 ![MasterData](https://github.com/loictiemani/Master-Data-Governance-SAP/blob/main/docs/MasterData.png)
+
+##### Maintenance & Reliability
 ![Maintenance_reliability](https://github.com/loictiemani/Master-Data-Governance-SAP/blob/main/docs/Maintenance_reliability.png)
 
 ## 📂 Folder Guide
