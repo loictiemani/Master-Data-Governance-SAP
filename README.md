@@ -24,8 +24,9 @@ SAP PM | SAP MDG | Power BI | SQL Server | AVEVA PI (simulated) | Azure (optiona
 - `data_templates/` → Master data Excel templates
 - `scripts/` → Data validation SQL
 - `docs/` → Documentation of governance process
-  
-## Asset Hierarchy
+
+## 🏗️ Asset Structure
+### Asset Hierarchy
 
 <pre>
 Plant
@@ -58,8 +59,10 @@ Plant
   │ │ │ │ ├── Brake System H2 
   │ │ │ │ └── Drum H3 
 </pre>
- ... 
-## KPIs
+## 📈 Performance Measurement
+
+### KPIs
+...
 
 🛠️ Asset Performance KPIs
 KPI	Description
