@@ -134,5 +134,45 @@ def generate_asset_data(num_equipment=50, seed=42):
     fmeca_df = pd.DataFrame(fmeca_rows, columns=[
         "Equipment ID", "Failure Mode ID", "Failure Mode", "Severity", "Recommended Action", "Criticality"
     ])
+    # Failure History & Runtime Logs
+    failure_history_rows = []
+    runtime_log_rows = []
 
-    return equipment_df, bom_df, floc_df, task_list_df, fmeca_df
+    for _, row in equipment_df.iterrows():
+        equipment_id = row["Equipment ID"]
+
+        # Simulate 5 failures per equipment
+        for f in range(5):
+            failure_date = pd.Timestamp("2024-01-01") + pd.to_timedelta(random.randint(0, 120), unit="D")
+            downtime = round(np.random.uniform(1, 10), 2)
+            failure_history_rows.append([
+                equipment_id,
+                failure_date,
+                random.choice(["Mechanical", "Electrical", "Control"]),
+                downtime,
+                random.choice(["Overload", "Wear", "Misalignment", "Unknown"])
+            ])
+
+        # Simulate 12 monthly runtime logs
+        for m in range(12):
+            date = pd.Timestamp("2024-01-01") + pd.DateOffset(months=m)
+            runtime_hours = round(np.random.uniform(600, 720), 2)  # ~700 hrs/month
+            downtime_hours = round(np.random.uniform(0, 20), 2)
+            availability = round((runtime_hours / (runtime_hours + downtime_hours)) * 100, 2)
+            runtime_log_rows.append([
+                equipment_id,
+                date,
+                runtime_hours,
+                downtime_hours,
+                availability
+            ])
+
+    failure_history_df = pd.DataFrame(failure_history_rows, columns=[
+        "Equipment ID", "Failure Date", "Failure Type", "Downtime (hrs)", "Cause"
+    ])
+    runtime_log_df = pd.DataFrame(runtime_log_rows, columns=[
+        "Equipment ID", "Date", "Runtime (hrs)", "Downtime (hrs)", "Availability (%)"
+    ])
+
+    return equipment_df, bom_df, floc_df, task_list_df, fmeca_df, failure_history_df, runtime_log_df
+
