@@ -61,15 +61,8 @@ Plant
 </pre>
 ---
 ## 📈 Performance Measurement
-
 ### KPIs
 
-
-🛠️ Asset Performance KPIs
-## 📈 Performance Measurement
-
-### KPIs
-...
 | KPI                            | Description                                      |
 |--------------------------------|--------------------------------------------------|
 | MTTF (Mean Time to Failure)    | Average uptime between failures                 |
