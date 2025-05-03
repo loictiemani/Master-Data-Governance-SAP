@@ -20,6 +20,7 @@ SAP PM | SAP MDG | Power BI | SQL Server | AVEVA PI (simulated) | Azure (optiona
 ## 🖼️ Screenshots
 *(Include images of Power BI dashboards, asset hierarchy charts, etc.)*
 ![MasterData](https://github.com/loictiemani/Master-Data-Governance-SAP/blob/main/docs/MasterData.png)
+![Maintenance_reliability](https://github.com/loictiemani/Master-Data-Governance-SAP/blob/main/docs/Maintenance_reliability.png)
 
 ## 📂 Folder Guide
 - `data_templates/` → Master data Excel templates
