@@ -37,11 +37,21 @@ def generate_asset_data(num_equipment=50, seed=42):
         desc = f"{eq_class.replace('_', ' ').title()} Unit {i+1}"
         func_loc = f"PLANT01-{eq_class}-{i+1:03}"
         crit = random.choice(criticalities)
-        equipment_data.append([eq_id, desc, func_loc, eq_class, manu, model, crit])
+
+        # Simulated reliability metrics (in hours/days)
+        mttf = round(np.random.uniform(500, 2000), 2)  # Mean time to failure
+        mttr = round(np.random.uniform(5, 20), 2)       # Mean time to repair
+        mtbf = mttf + mttr                               # MTBF = MTTF + MTTR
+        oee = round(np.random.uniform(60, 95), 2)        # Overall Equipment Effectiveness in %
+
+        equipment_data.append([
+            eq_id, desc, func_loc, eq_class, manu, model, crit, mttf, mttr, mtbf, oee
+        ])
 
     equipment_df = pd.DataFrame(equipment_data, columns=[
         "Equipment ID", "Description", "Functional Location", "Class",
-        "Manufacturer", "Model", "Criticality"
+        "Manufacturer", "Model", "Criticality",
+        "MTTF (hrs)", "MTTR (hrs)", "MTBF (hrs)", "OEE (%)"
     ])
 
     # Related datasets
