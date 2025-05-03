@@ -111,11 +111,6 @@ Plant
 
 ---
 
-## 🖼️ Screenshots
-
-*(Include Power BI dashboards, asset hierarchy visualizations, validation results, etc.)*
-
----
 
 ## 📬 Contact
 
