@@ -35,6 +35,7 @@ Plant
 │   │   │   ├── Equipment
 │   │   │   │   └── Component
 <pre> 
+  
 <pre> Plant 
   ├── Mill Area 
   │ ├── Crushing Subarea 
@@ -57,7 +58,6 @@ Plant
   │ │ │ │ ├── Brake System H2 
   │ │ │ │ └── Drum H3 
 </pre>
-
 
 ## KPIs
 🛠️ Asset Performance KPIs
