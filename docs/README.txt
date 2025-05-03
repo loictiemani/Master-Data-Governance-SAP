@@ -1,1 +1,7 @@
-This starter kit includes basic templates and logic for simulating an end-to-end master data governance project for a mining operation.
+🔍 Data Governance & Quality Management
+SAP MDG (also listed above) – for master data policies, validation, and stewardship
+
+Data Cleansing & Validation Processes – Error detection, deduplication, template governance
+
+Master Data Upload Governance (1SAP, APM) – Standardized template and quality control practices
+
