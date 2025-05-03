@@ -43,7 +43,8 @@ def generate_asset_data(num_equipment=50, seed=42):
         mttr = round(np.random.uniform(5, 20), 2)       # Mean time to repair
         mtbf = mttf + mttr                               # MTBF = MTTF + MTTR
         oee = round(np.random.uniform(60, 95), 2)        # Overall Equipment Effectiveness in %
-                # Simulate annual maintenance cost based on criticality and class
+
+        # Simulate annual maintenance cost based on criticality and class
         base_cost = {
             "High": 50000,
             "Medium": 30000,
@@ -55,13 +56,13 @@ def generate_asset_data(num_equipment=50, seed=42):
         equipment_data.append([
             eq_id, desc, func_loc, eq_class, manu, model, crit, mttf, mttr, mtbf, oee, maint_cost
         ])
-      
+
     equipment_df = pd.DataFrame(equipment_data, columns=[
         "Equipment ID", "Description", "Functional Location", "Class",
         "Manufacturer", "Model", "Criticality",
         "MTTF (hrs)", "MTTR (hrs)", "MTBF (hrs)", "OEE (%)",
         "Maintenance Cost ($/year)"
-        ])
+    ])
 
     # Related datasets
     bom_rows = []
@@ -95,14 +96,18 @@ def generate_asset_data(num_equipment=50, seed=42):
             f"INSPECT_{row['Class']}",
             "Inspection",
             f"Inspect {row['Class'].lower()} annually",
-            "365 days"
+            "365 days",
+            random.choice(["Planned", "Unplanned"]),
+            random.choice(["Completed", "Pending"])
         ])
         task_list_rows.append([
             row["Equipment ID"],
             f"LUBE_{row['Class']}",
             "Lubrication",
             f"Lubricate {row['Class'].lower()} bearings",
-            "90 days"
+            "90 days",
+            random.choice(["Planned", "Unplanned"]),
+            random.choice(["Completed", "Pending"])
         ])
 
         # FMECA
@@ -123,7 +128,8 @@ def generate_asset_data(num_equipment=50, seed=42):
         "Functional Location", "Area", "Subarea", "Class"
     ])
     task_list_df = pd.DataFrame(task_list_rows, columns=[
-        "Equipment ID", "Task ID", "Task Type", "Description", "Frequency"
+        "Equipment ID", "Task ID", "Task Type", "Description", "Frequency",
+        "Maintenance Type", "Status"
     ])
     fmeca_df = pd.DataFrame(fmeca_rows, columns=[
         "Equipment ID", "Failure Mode ID", "Failure Mode", "Severity", "Recommended Action", "Criticality"
