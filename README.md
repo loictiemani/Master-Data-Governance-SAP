@@ -59,10 +59,12 @@ Plant
   │ │ │ │ ├── Brake System H2 
   │ │ │ │ └── Drum H3 
 </pre>
+
+---
 ## 📈 Performance Measurement
 
 ### KPIs
-...
+
 
 🛠️ Asset Performance KPIs
 KPI	Description
