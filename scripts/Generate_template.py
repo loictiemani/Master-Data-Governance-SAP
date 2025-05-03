@@ -43,16 +43,25 @@ def generate_asset_data(num_equipment=50, seed=42):
         mttr = round(np.random.uniform(5, 20), 2)       # Mean time to repair
         mtbf = mttf + mttr                               # MTBF = MTTF + MTTR
         oee = round(np.random.uniform(60, 95), 2)        # Overall Equipment Effectiveness in %
+                # Simulate annual maintenance cost based on criticality and class
+        base_cost = {
+            "High": 50000,
+            "Medium": 30000,
+            "Low": 15000
+        }
+        variance = np.random.uniform(0.9, 1.2)
+        maint_cost = round(base_cost[crit] * variance, 2)
 
         equipment_data.append([
-            eq_id, desc, func_loc, eq_class, manu, model, crit, mttf, mttr, mtbf, oee
+            eq_id, desc, func_loc, eq_class, manu, model, crit, mttf, mttr, mtbf, oee, maint_cost
         ])
-
+      
     equipment_df = pd.DataFrame(equipment_data, columns=[
         "Equipment ID", "Description", "Functional Location", "Class",
         "Manufacturer", "Model", "Criticality",
-        "MTTF (hrs)", "MTTR (hrs)", "MTBF (hrs)", "OEE (%)"
-    ])
+        "MTTF (hrs)", "MTTR (hrs)", "MTBF (hrs)", "OEE (%)",
+        "Maintenance Cost ($/year)"
+        ])
 
     # Related datasets
     bom_rows = []
