@@ -37,7 +37,8 @@ Plant
 │   │   │   │   └── Component
 <pre> 
   
-<pre> Plant 
+<pre>
+  Plant 
   ├── Mill Area 
   │ ├── Crushing Subarea 
   │ │ ├── Crusher System 
